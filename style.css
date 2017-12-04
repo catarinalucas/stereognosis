@@ -36,7 +36,7 @@ section {
     height: 300px;
     max-height: 100%;
     max-width: 100%;
-    margin: 5% 2% 2% 2%;
+    margin: 5% 2% 5% 2%;
 }
 
 #magazine_one {
@@ -49,4 +49,12 @@ section {
 
 #magazine_three {
     background-color: palevioletred;
+}
+
+.description{
+   margin: 5% 2% 2% 2%;
+}
+
+.price{
+    margin: 0% 2% 2% 2%;
 }
