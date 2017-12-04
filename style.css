@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    min-height: 100vh;
+}
+
+/*----CAROUSEL----*/
+
+.carousel{
+    padding-top:80px;
+    padding-top:80px;
+}
+
+.item{
+    position: relative;
+    padding-bottom: 130px;
+}
+.carousel-control{
+    width: 100%;
+    height: 100%;
+}
+
+/*---SHOP---*/
+
+#magazine_one{
+    background-color: aqua;  
+}
+
+#magazine_two{
+    background-color: aquamarine;
+   
+}
+
+#magazine_three{
+    background-color: palevioletred;
+    
+}
+
+
