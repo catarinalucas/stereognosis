@@ -8,6 +8,13 @@ section {
     min-height: 100vh;
 }
 
+.align-left{
+    text-align: left;
+}
+
+.second_color{
+    color: #4a4a4a;;
+}
 
 /*----CAROUSEL----*/
 
@@ -30,13 +37,25 @@ section {
 /*---------NOTE - padding: top right bottom left; -------------*/
 
 
-/*---SHOP---*/
+/*------------------------------SHOP------------------------------*/
 
+.description {
+    font-size:12px;
+    margin: 5% 2% 2% 2%;
+}
+
+.price {
+    margin: 0% 2% 2% 2%;
+}
+
+/*---GET THE MAGAZINE---*/
 .magazine_img {
     height: 300px;
     max-height: 100%;
     max-width: 100%;
     margin: 5% 2% 5% 2%;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 #magazine_one {
@@ -51,10 +70,122 @@ section {
     background-color: palevioletred;
 }
 
-.description{
-   margin: 5% 2% 2% 2%;
+/*---GET THE BOOKS---*/
+
+.book_img{
+    height: 200px;
+    max-height: 100%;
+    max-width: 100%;
+    margin: 5% 0% 5% 2%;
 }
 
-.price{
-    margin: 0% 2% 2% 2%;
+.book_description{
+    margin: 5% 2% 0% 2%;
+}
+
+.author{
+    margin-top: 2%;
+}
+
+#book_one {
+    background-color: aqua;
+}
+
+#book_two {
+    background-color:cadetblue;
+}
+
+#book_three {
+    background-color:coral;
+}
+
+#book_four {
+    background-color:cornflowerblue;
+}
+
+#book_five {
+    background-color:crimson;
+}
+
+#book_six {
+    background-color:darksalmon;
+}
+
+#book_seven {
+    background-color:forestgreen;
+}
+
+#book_eigth {
+    background-color:dodgerblue;
+}
+
+#book_nine {
+    background-color:firebrick;
+}
+
+#book_ten {
+    background-color:deeppink;
+}
+
+/*---GET THE BOOKS :HOVER EFFECT---*/
+
+.shop-book-read, .shop-book-buy{
+    color:#000;
+    font-size: 16px;
+    position: absolute;
+    opacity: 1;
+}
+
+
+.effect {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.magazine_img:hover .effect {
+  opacity: 1;
+}
+
+/*------------------------------SHOP - ITEM PAGE ------------------------------*/
+
+.the-image {
+	width: 618px;
+	height: 83px;
+}
+
+.item-page-price {
+	width: 238px;
+	height: 29px;
+}
+
+.item-description{
+    width: 730px;
+	height: 203px;
+}
+
+.item-read-article{
+    width: 149px;
+	height: 25px;
+}
+
+.item-quantity {
+	width: 149px;
+	height: 25px;
+}
+
+input[type=number]{
+    width: 110px;
+	height: 30px;
+}
+
+.item-add-bag{
+    width: 149px;
+	height: 25px;
+    border: none;
+    cursor:pointer;
 }
