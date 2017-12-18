@@ -64,6 +64,48 @@ section {
 }
 
 
+/*-------PURPOSE--------*/
+
+.purpose_perception, .purpose_creativity{
+    width: 50vw;
+	height: 1024px;
+}
+
+.purpose_perception-rectangle, .purpose_creativity-rectangle{
+    width: 150px;
+	height: 541px;
+	background-color: purple;
+}
+
+.purpose_creativity-rectangle{
+    float:right;   
+}
+
+.purpose_perception-line{
+    width: 255px;
+	height: 2px;
+	border: solid 1px #000000;
+
+}
+
+.purpose-title{
+    font-size: 43px;
+	font-weight: 300;
+	text-align: center;
+	color: #4a4a4a;
+}
+
+.purpose_perception-title{
+    -webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.purpose_creativity-title{
+    -webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+
 /*---------NOTE - padding: top right bottom left; -------------*/
 
 
@@ -267,5 +309,90 @@ ul li{
     color: #666;
     float: left;
 }
+
+
+/*------------------------------PURPOSE SECTION------------------------------*/
+
+.purpose{
+    position: relative;
+    min-height: 70vh;
+    overflow-x: hidden;
+}
+
+.purpose__section{
+    position: absolute;
+    top: 10px;
+    height: 90%;
+    width: 60vw;
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+.purpose__section::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -15vw;
+    width: 15vw;
+    height: 1px;
+    background-color: black;
+    z-index: 2;
+}
+
+.purpose__section-title{
+    text-transform: uppercase;
+    font-size: 24px;
+    position: absolute;
+    top: 45%;
+    right: calc(-15vw - 100px);
+    color: black;
+    transform: rotate(-90deg);
+}
+
+
+.purpose__section--l{
+    left: -50%;
+    background-color: blue;
+}
+
+.purpose__section--r{
+    right: -50%;
+    background-color: purple;
+}
+
+.purpose__section--r.purpose__section::after{
+    right: auto;
+    left: -15vw;
+}
+
+.purpose__section--r .purpose__section-title{
+    right: auto;
+    left: calc(-15vw - 85px);
+}
+
+/*Left clicked*/
+
+.purpose--left-clicked .purpose__section--l{
+    left: 0;
+}
+
+.purpose--left-clicked .purpose__section--r{
+    right: -60%;
+}
+
+
+/*right clicked*/
+
+.purpose--right-clicked .purpose__section--l{
+    left: -60%;
+}
+
+.purpose--right-clicked .purpose__section--r{
+    right: 0;
+}
+
 
 
