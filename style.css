@@ -31,7 +31,9 @@ body{
 
 
 section {
+  position: relative;
     min-height: 100vh;
+    top:30px;
 }
 
 .align-left{
@@ -404,7 +406,7 @@ span{
   width: 100%;
 }
 
-#menu{
+nav{
 
   position: fixed;
   background-color: #333;
@@ -420,9 +422,9 @@ span{
   transition-property: height;
   transition-duration: 1s;
   transition-delay: 0s;
-
+z-index: 10;
 }
 
-#menu:hover {
+.down {
   height: 100vh;
 }
