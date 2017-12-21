@@ -78,7 +78,7 @@ section {
 }
 
 .purpose_creativity-rectangle{
-    float:right;   
+    float:right;
 }
 
 .purpose_perception-line{
@@ -278,13 +278,13 @@ footer{
 
 p, ul{
     -webkit-margin-after: 0;
-    
+
 }
 
 ul li{
     list-style-type: none;
     margin-bottom: 0;
-    
+
 }
 
 .footer__info{
@@ -395,4 +395,34 @@ ul li{
 }
 
 
+/*----------------------MENU-------------------------*/
 
+span{
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+}
+
+#menu{
+
+  position: fixed;
+  background-color: #333;
+  color: #ddd;
+
+  text-align: center;
+  font-family: "Overpass", monospace;
+  font-weight: lighter;
+  font-size: small;
+  height: 20px;
+  width: 100vw;
+
+  transition-property: height;
+  transition-duration: 1s;
+  transition-delay: 0s;
+
+}
+
+#menu:hover {
+  height: 100vh;
+}
