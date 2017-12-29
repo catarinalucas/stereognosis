@@ -2,9 +2,11 @@ jQuery(function($) {
     //quando se clica na da esquerda, a da direita abre
     $('.purpose-l-click-js').click(function(){
         if($('.purpose').hasClass('purpose--right-clicked')){
-            $('.purpose').removeClass('purpose--right-clicked');    
+            $('.purpose').removeClass('purpose--right-clicked');
+            
         }
-        $('.purpose').addClass('purpose--left-clicked');
+        $('.purpose').addClass('purpose--left-clicked'); 
+        $('.purpose__section-text--l').css('visibility','visible');
         
     });
     
@@ -13,6 +15,7 @@ jQuery(function($) {
             $('.purpose').removeClass('purpose--left-clicked');    
         }
         $('.purpose').addClass('purpose--right-clicked');
+        $('.purpose__section-text--r').css('visibility','visible');
     });
     
     $('footer').click(function(evt){
@@ -25,5 +28,7 @@ jQuery(function($) {
             }
             console.log("oh hai mark");
         }
+        $('.purpose__section-text--l').css('visibility','hidden');
+        $('.purpose__section-text--r').css('visibility','hidden');
     });
 });
