@@ -184,6 +184,10 @@ a{
     transform: rotate(-90deg);
 }
 
+.purpose__section-title--r{
+    transform: rotate(90deg);
+}
+
 
 .purpose__section--l{
     left: -50%;
