@@ -148,7 +148,7 @@ a{
 .purpose{
     position: relative;
     min-height: 70vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
         
 .purpose__section{
