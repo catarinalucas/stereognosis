@@ -66,7 +66,7 @@ a{
 }
 
 /*----CAROUSEL----*/
-
+/*
 .carousel {
     margin-top: 10%;
 }
@@ -97,12 +97,16 @@ a{
 .carousel-icon{
     color: #FFF;
     font-size: 30px;
-}
+}*/
 
 .item {
     position: relative;
-    padding-bottom: 130px;
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    padding-top: 50px;
 }
+
 
 .carousel-inner img {
     width: 60%;
