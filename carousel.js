@@ -1,6 +1,7 @@
 $(document).ready(function(){
   
     var owl = $("#owl-demo");
+    isMoving = false;
     
 $('#owl-demo').owlCarousel({
     loop:true,
@@ -17,18 +18,21 @@ $('#owl-demo').owlCarousel({
    
         
     owl.on('mousewheel', '.owl-stage', function (e) {
-    if (e.deltaY>0) {
+        
+   if (e.deltaY>0) {
         owl.trigger('next.owl');
     } else {
         owl.trigger('prev.owl');
     }
     e.preventDefault();
 })
-        
     
+
     
 
  });
+
+
 
 
 
