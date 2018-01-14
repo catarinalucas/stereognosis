@@ -1,13 +1,13 @@
 $(document).ready(function(){
   
     var owl = $("#owl-demo");
-    isMoving = false;
+    
     
 $('#owl-demo').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    startPosition:7,
+    startPosition:6,
     items: 1,
     itemsDesktop: false,//1400:screen size, 3: number if items in the slide
     itemsDesktopSmall: false,
@@ -15,9 +15,9 @@ $('#owl-demo').owlCarousel({
     itemsMobile: false
 })
    
-   
-        
-    owl.on('mousewheel', '.owl-stage', function (e) {
+    
+  
+   owl.on('mousewheel', '.owl-stage', function (e) {
         
    if (e.deltaY>0) {
         owl.trigger('next.owl');
@@ -26,11 +26,15 @@ $('#owl-demo').owlCarousel({
     }
     e.preventDefault();
 })
-    
 
+    
+    
+        
+    
     
 
  });
+
 
 
 
